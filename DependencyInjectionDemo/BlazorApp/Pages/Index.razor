@@ -1,0 +1,12 @@
+﻿@page "/"
+
+@using BlazorApp.Data
+@inject IDataAccess db
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+Your random number is @db.GetUserAge()
